@@ -56,12 +56,12 @@ public class GeneralTask {
     }
 
     private static double ConvertCelsiusToFahrenheit(double celsius){
-        double fahrenheit = celsius *9/5 +32;
+        double fahrenheit = celsius *9.0/5.0 +32;
         return fahrenheit;
     }
 
     private static double ConvertFahrenheitToCelsius(double fahrenheit){
-        double celcius = (fahrenheit - 32)*5/9;
+        double celcius = (fahrenheit - 32)*5.0/9.0;
         return celcius;
     }
 
