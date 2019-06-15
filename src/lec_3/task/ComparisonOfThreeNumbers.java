@@ -21,7 +21,6 @@ public class ComparisonOfThreeNumbers {
             if(number1>number2)
                 System.out.println("max=number3"+ "  mid=number1"+ "  min=number2");
             else
-
                 System.out.println("max=number3"+ "  mid=number2"+ "  min=number1");
 
         }
