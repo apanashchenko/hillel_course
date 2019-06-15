@@ -7,12 +7,12 @@ import static java.lang.Math.sqrt;
 
 public class CircleAndSquare {
     public static void main(String[] args) {
-        double circleArea = 20;
-        double squareArea = 5;
+        double circleArea=20;
+        double squareArea=5;
 
-        double diameterOfCircle = 2*sqrt(circleArea/PI);
-        double sideOfSquare = sqrt(squareArea);
-        double diagonalOfSquare = sqrt(2*squareArea);
+        double diameterOfCircle=2*sqrt(circleArea/PI);
+        double sideOfSquare=sqrt(squareArea);
+        double diagonalOfSquare=sqrt(2*squareArea);
 
         if(diameterOfCircle<=sideOfSquare)
             System.out.println("The circle fits into the square");

@@ -5,7 +5,7 @@ import static java.lang.Math.abs;
 
 public class ComparingMagnitude {
     public static void main(String[] args) {
-        int x = 9, y = -10;
+        int x=9, y=-10;
         if(abs(x)>abs(y))
             System.out.println("Magnitude of \"x\" more than magnitude of \"y\"");
         else if(abs(y)>abs(x))

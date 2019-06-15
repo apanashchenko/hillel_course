@@ -5,21 +5,11 @@ import java.util.Date;
 
 public class TimeFromBirthday {
     public static void main(String[] args) {
-
         Date dateNow = new Date();
-
         Calendar calendar= Calendar.getInstance();
         calendar.set(1987,4,9,6,45);
 
-        System.out.println(dateNow);
-        System.out.println(calendar.getTime());
-
-
-        double ddd= calendar.getTimeInMillis();
-        double bbb= dateNow.getTime()-ddd;
-
-        double secondsFromBirthdays = (dateNow.getTime()- calendar.getTimeInMillis())/1000;
-
+        double secondsFromBirthdays = (dateNow.getTime()-calendar.getTimeInMillis())/1000;
         double minutesFromBirthdays = secondsFromBirthdays/60;
         double hoursFromBirthdays =secondsFromBirthdays/(60*60);
         double daysFromBirthdays =secondsFromBirthdays/(60*60*24);
