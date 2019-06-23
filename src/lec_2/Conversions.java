@@ -1,6 +1,6 @@
 package lec_2;
 
-public class GeneralTask {
+public class Conversions {
     public static void main(String[] args) {
 
         // Convert temperature
@@ -8,9 +8,9 @@ public class GeneralTask {
         double celsius = -12.5;
 
         System.out.println("Convert temperature:");
-        System.out.println(celsius + "C = " + ConvertCelsiusToFahrenheit(celsius) + "F");
-        System.out.println(fahrenheit + "F = " + ConvertFahrenheitToCelsius(fahrenheit) + "C");
-        System.out.println(celsius + "C = " + ConvertCelsiusToKelvin(celsius) + "K");
+        System.out.println(celsius + "C = " + convertCelsiusToFahrenheit(celsius) + "F");
+        System.out.println(fahrenheit + "F = " + convertFahrenheitToCelsius(fahrenheit) + "C");
+        System.out.println(celsius + "C = " + convertCelsiusToKelvin(celsius) + "K");
         System.out.println();
 
 
@@ -55,17 +55,17 @@ public class GeneralTask {
         System.out.println(miInHrForConvertion + "mi/hr = " + kmInHrAfterConvertion + "km/hr");
     }
 
-    private static double ConvertCelsiusToFahrenheit(double celsius){
+    private static double convertCelsiusToFahrenheit(double celsius){
         double fahrenheit = celsius *9.0/5.0 +32;
         return fahrenheit;
     }
 
-    private static double ConvertFahrenheitToCelsius(double fahrenheit){
+    private static double convertFahrenheitToCelsius(double fahrenheit){
         double celcius = (fahrenheit - 32)*5.0/9.0;
         return celcius;
     }
 
-    private static double ConvertCelsiusToKelvin(double celsius){
+    private static double convertCelsiusToKelvin(double celsius){
         double kelvin = celsius + 273.16;
         return kelvin;
     }

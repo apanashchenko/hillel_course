@@ -15,20 +15,17 @@ public class Task1 {
         System.out.println(res);
 
         // 2 to 10
-        String number1 = "101101";
-        String res = "";
-        for(int i=0; i<number1.length(); i++)
+        String binaryNumber = "110";
+        String[] arrayOfBinaryNumber = binaryNumber.split("(?!^)");
 
+        int result = 0;
 
-
-
-        while (number != 0) {
-            b = number % 2;
-            res = b + res;
-            number = number / 2;
+        for(int i=0; i < arrayOfBinaryNumber.length; i++){
+            if(arrayOfBinaryNumber[i].equals("1")){
+                result+= Math.pow(2, arrayOfBinaryNumber.length-1-i);
+            }
         }
-        System.out.println(res);
 
-
+       System.out.println(result);
     }
 }
