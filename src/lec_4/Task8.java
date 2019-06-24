@@ -17,10 +17,7 @@ public class Task8 {
         else{
             System.out.println("| column_1 | column_2 |   sum   | ");
             for (int i = 0; i < column1.length; i++) {
-                for (int j = 0; j < column2.length; j++) {
-                    if(i==j)
-                    System.out.println("|    "+ column1[i] + "    |    "+ column2[j]+ "    |    "+sumOfColumnValues(column1[i],column2[j])+ "    |");
-                }
+                System.out.println("|    " + column1[i] + "    |    " + column2[i] + "    |    " + sumOfColumnValues(column1[i], column2[i]) + "    |");
             }
         }
     }
@@ -34,3 +31,7 @@ public class Task8 {
         return  value1 + value2;
     }
 }
+
+
+
+
