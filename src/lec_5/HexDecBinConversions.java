@@ -1,37 +1,37 @@
 package lec_5;
 
-public class HexDexBinConversions {
+public class HexDecBinConversions {
     public static void main(String[] args) {
-        int dexValue = 4576;
+        int decValue = 4576;
         String binaryNumber = "110";
         String hexVelue = "6BF09A";
 
         // 10 to 2
-        System.out.println(convertDexToBin(dexValue));
+        System.out.println(convertDecToBin(decValue));
 
         // 10 to 16
-        System.out.println(convertDexToHex(dexValue));
+        System.out.println(convertDecToHex(decValue));
 
         // 2 to 10
-        System.out.println(convertBinToDex(binaryNumber));
+        System.out.println(convertBinToDec(binaryNumber));
 
         // 16 to 10
-        System.out.println(convertHexToDex(hexVelue));
+        System.out.println(convertHexToDec(hexVelue));
     }
 
-    public static String convertDexToBin(int dexValue) {
+    public static String convertDecToBin(int decValue) {
         int b;
         String result = "";
 
-        while (dexValue != 0) {
-            b = dexValue % 2;
+        while (decValue != 0) {
+            b = decValue % 2;
             result = b + result;
-            dexValue = dexValue / 2;
+            decValue = decValue / 2;
         }
         return result;
     }
 
-    public static int convertBinToDex(String binValue) {
+    public static int convertBinToDec(String binValue) {
 
         String[] arrayOfBinaryNumber = binValue.split("(?!^)");
 
@@ -45,12 +45,12 @@ public class HexDexBinConversions {
         return result;
     }
 
-    public static String convertDexToHex(int dexValue) {
+    public static String convertDecToHex(int decValue) {
         int b;
         String result = "";
 
-        while (dexValue != 0) {
-            b = dexValue % 16;
+        while (decValue != 0) {
+            b = decValue % 16;
             switch (b) {
                 case 10:
                     result = "A" + result;
@@ -73,12 +73,12 @@ public class HexDexBinConversions {
                 default:
                     result = b + result;
             }
-            dexValue = dexValue / 16;
+            decValue = decValue / 16;
         }
         return result;
     }
 
-    public static int convertHexToDex(String binValue) {
+    public static int convertHexToDec(String binValue) {
         String[] array = binValue.split("(?!^)");
 
         int result = 0;
