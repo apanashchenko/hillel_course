@@ -3,7 +3,8 @@ package lec_6;
 public class CountWordsOfEachLength {
     public static void main(String[] args) {
         char space = ' ';
-        String text = "wew. ffefe efee. rr.";
+        String text = "Lorem ipsum dolor sit amet";
+
         int wordWith1Leter = 0;
         int wordWith2Leter = 0;
         int wordWith3Leter = 0;
@@ -21,12 +22,6 @@ public class CountWordsOfEachLength {
                 if (i == (text.length() - 1)) {
                     length = i + 1 - index;
                 }
-                else if(text.charAt(i - 1) == '.'){
-                    length = i - index - 1;
-                    index = i + 1;}
-                else if(text.charAt(i) == '.' || i == (text.length() - 1)){
-                    length = i - index;;
-                    }
                 else {
                     length = i - index;
                     index = i + 1;
