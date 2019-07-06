@@ -9,36 +9,20 @@ public class FractionNumbers {
             this.denominator = denominator;
         }
 
-    public double getDenominator() {
-        return denominator;
-    }
-
-    public double getNumerator() {
-        return numerator;
-    }
-
-    public void setDenominator(double denominator) {
-        this.denominator = denominator;
-    }
-
-    public void setNumerator(double numerator) {
-        this.numerator = numerator;
-    }
-
     public double sumFractionNumbers(FractionNumbers fractionNumbers){
-      return (this.getNumerator() * fractionNumbers.getDenominator() + fractionNumbers.getNumerator() * this.getDenominator()) / (this.getDenominator() * fractionNumbers.getDenominator());
+      return (this.numerator * fractionNumbers.denominator + fractionNumbers.numerator * this.denominator) / (this.denominator * fractionNumbers.denominator);
     }
 
     public double minusFractionNumbers(FractionNumbers fractionNumbers){
-        return (this.getNumerator() * fractionNumbers.getDenominator() - fractionNumbers.getNumerator() * this.getDenominator()) / (this.getDenominator() * fractionNumbers.getDenominator());
+        return (this.numerator * fractionNumbers.denominator - fractionNumbers.numerator * this.denominator) / (this.denominator * fractionNumbers.denominator);
     }
 
     public double multiplyFractionNumbers(FractionNumbers fractionNumbers){
-        return (this.getNumerator() * fractionNumbers.getNumerator()) / (this.getDenominator() * fractionNumbers.getDenominator());
+        return (this.numerator * fractionNumbers.numerator) / (this.denominator * fractionNumbers.denominator);
     }
 
     public double devideFractionNumbers(FractionNumbers fractionNumbers){
-        return (this.getNumerator() * fractionNumbers.getDenominator()) / (this.getDenominator() * fractionNumbers.getNumerator());
+        return (this.numerator * fractionNumbers.denominator) / (this.denominator * fractionNumbers.numerator);
     }
 
     @Override
