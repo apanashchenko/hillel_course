@@ -9,20 +9,20 @@ public class FractionNumbers {
             this.denominator = denominator;
         }
 
-    public double sumFractionNumbers(FractionNumbers fractionNumbers){
-      return (this.numerator * fractionNumbers.denominator + fractionNumbers.numerator * this.denominator) / (this.denominator * fractionNumbers.denominator);
+    public double sumFractionNumbers(FractionNumbers fractionNumber){
+      return (this.numerator * fractionNumber.denominator + fractionNumber.numerator * this.denominator) / (this.denominator * fractionNumber.denominator);
     }
 
-    public double minusFractionNumbers(FractionNumbers fractionNumbers){
-        return (this.numerator * fractionNumbers.denominator - fractionNumbers.numerator * this.denominator) / (this.denominator * fractionNumbers.denominator);
+    public double minusFractionNumbers(FractionNumbers fractionNumber){
+        return (this.numerator * fractionNumber.denominator - fractionNumber.numerator * this.denominator) / (this.denominator * fractionNumber.denominator);
     }
 
-    public double multiplyFractionNumbers(FractionNumbers fractionNumbers){
-        return (this.numerator * fractionNumbers.numerator) / (this.denominator * fractionNumbers.denominator);
+    public double multiplyFractionNumbers(FractionNumbers fractionNumber){
+        return (this.numerator * fractionNumber.numerator) / (this.denominator * fractionNumber.denominator);
     }
 
-    public double devideFractionNumbers(FractionNumbers fractionNumbers){
-        return (this.numerator * fractionNumbers.denominator) / (this.denominator * fractionNumbers.numerator);
+    public double devideFractionNumbers(FractionNumbers fractionNumber){
+        return (this.numerator * fractionNumber.denominator) / (this.denominator * fractionNumber.numerator);
     }
 
     @Override
