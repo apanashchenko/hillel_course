@@ -1,4 +1,4 @@
-package lec_7;
+package lec_8;
 
 public class FractionNumbers {
         private double numerator;
@@ -23,6 +23,15 @@ public class FractionNumbers {
 
     public double devideFractionNumbers(FractionNumbers fractionNumber){
         return (this.numerator * fractionNumber.denominator) / (this.denominator * fractionNumber.numerator);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        FractionNumbers fractionNumbers = (FractionNumbers) o;
+        return Double.compare(fractionNumbers.numerator, numerator) == 0 &&
+                Double.compare(fractionNumbers.denominator, denominator) == 0;
     }
 
     @Override
