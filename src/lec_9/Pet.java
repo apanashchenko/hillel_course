@@ -10,7 +10,6 @@ public class Pet {
 
     public Pet(String name, Enum gender, Human owner) {
         this.name = name;
-        this.age = age;
         this.gender = gender;
         this.owner = owner;
     }
