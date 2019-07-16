@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class FileLogger extends Loggers {
+public class FileLogger extends Logger {
     public void log(String message) {
         try(FileWriter writer = new FileWriter("log.txt", false))
         {
