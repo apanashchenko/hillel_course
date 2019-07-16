@@ -1,4 +1,4 @@
-package lec_9;
+package trash.Pet;
 
 public class Human {
     private String name;
@@ -9,11 +9,11 @@ public class Human {
         this.age = age;
     }
 
-    public String getName() {
-        return name;
-    }
+        public String getName() {
+            return name;
+        }
 
-    public int getAge() {
-        return age;
+        public int getAge() {
+            return age;
     }
 }
