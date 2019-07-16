@@ -1,25 +1,26 @@
 package lec_10;
 
+import java.io.FileWriter;
 import java.io.IOException;
-import java.util.logging.FileHandler;
-import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class FileLogger extends Loggers {
     public void log(String message) {
-        Logger logger = Logger.getLogger("MyLog");
+        try(FileWriter writer = new FileWriter("log.txt", false))
+        {
+            Calendar calendar = Calendar.getInstance();
+            SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 
-        FileHandler fh = null;
-        try {
-            fh = new FileHandler("C:/temp/test/MyLog.log");
-        } catch (IOException e) {
-            e.printStackTrace();
+            writer.write(formatter.format(calendar.getTime()));
+            writer.append('\n');
+            writer.write(message);
+
+            writer.flush();
         }
-        logger.addHandler(fh);
+        catch(IOException ex){
 
-        SimpleFormatter formatter = new SimpleFormatter();
-        fh.setFormatter(formatter);
-
-        logger.info(message);
+            System.out.println(ex.getMessage());
+        }
     }
 }
