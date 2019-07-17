@@ -6,15 +6,17 @@ package trash.Cake;
 public class TestLoggerMain {
 
     public static void main(String[] args) {
-//        ConsoleLogger consoleLogger = new ConsoleLogger();
-//        consoleLogger.log("first message");
-//
-//        FileLogger logger = new FileLogger();
-//        logger.log("first message");
-//        logger.logInFile("first message in file");
+        /*ConsoleLogger consoleLogger = new ConsoleLogger();
+        consoleLogger.log("first message");
 
-//        fileLogger.log("bsdfsdfsdf");
-//        ILogger consoleLogger = new ConsoleLogger();
+        FileLogger logger = new FileLogger();
+        logger.log("first message");
+        logger.logInFile("first message in file");
+
+        fileLogger.log("bsdfsdfsdf");
+        */
+
+
         ILogger fileLogger = new FileLogger();
         Cake cake2 = new Cake(fileLogger);
         cake2.setName("Chocolate cake 2");

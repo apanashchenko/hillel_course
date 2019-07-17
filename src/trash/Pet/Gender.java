@@ -1,4 +1,4 @@
-package lec_9;
+package trash.Pet;
 
 public enum Gender {
     MALE,
