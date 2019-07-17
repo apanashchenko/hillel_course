@@ -1,7 +1,5 @@
 package trash.Inheritance;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
 public class KumysCompany extends Company {
     public KumysCompany(String name, String description, int employeeNumber, String location) {
         super(name, description, employeeNumber, location);
