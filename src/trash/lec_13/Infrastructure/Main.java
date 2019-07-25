@@ -1,9 +1,5 @@
 package trash.lec_13.Infrastructure;
 
-import trash.lec_13.Infrastructure.WebDrivers.ChromeWebDriver;
-
-import java.sql.SQLOutput;
-
 public class Main {
     public static void main(String[] args) {
         WebDriverFactory webDriverFactory= new WebDriverFactory();
