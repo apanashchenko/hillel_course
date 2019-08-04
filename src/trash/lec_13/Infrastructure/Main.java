@@ -3,7 +3,7 @@ package trash.lec_13.Infrastructure;
 public class Main {
     public static void main(String[] args) {
         WebDriverFactory webDriverFactory= new WebDriverFactory();
-        IWebDriver driver = webDriverFactory.create();
+        WebDriver driver = webDriverFactory.create();
 
 
         driver.open("https://google.com/");

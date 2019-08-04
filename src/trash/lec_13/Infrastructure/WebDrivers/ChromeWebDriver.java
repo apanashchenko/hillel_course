@@ -1,8 +1,8 @@
 package trash.lec_13.Infrastructure.WebDrivers;
 
-import trash.lec_13.Infrastructure.IWebDriver;
+import trash.lec_13.Infrastructure.WebDriver;
 
-public class ChromeWebDriver implements IWebDriver {
+public class ChromeWebDriver implements WebDriver {
     @Override
     public void open(String url) {
         System.out.println("Open Chrome url" + url);

@@ -6,10 +6,10 @@ import trash.lec_13.Infrastructure.WebDrivers.EdgeWebDriver;
 import trash.lec_13.Infrastructure.WebDrivers.FirefoxWebDriver;
 import trash.lec_13.Infrastructure.WebDrivers.SafariWebDriver;
 
-public class WebDriverFactory implements IWebDriverFactory {
-    @Override
-    public IWebDriver create() {
-        IWebDriver driver = null;
+public class WebDriverFactory   {
+
+    public WebDriver create() {
+        WebDriver driver = null;
         String browserFromConfig = ConfigurationManager.getInstance().getBrowser();
         Browsers browser = Browsers.valueOf(browserFromConfig.toUpperCase());
 

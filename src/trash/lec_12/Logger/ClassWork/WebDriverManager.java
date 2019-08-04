@@ -6,7 +6,7 @@ import lec_8.ConfigurationManager;
 
 //public class IWebDriverManager {
    /* public String getBrowser(){
-        String browser = ConfigurationManager.getInstance().getBrowser();
+        String browser = Configuration.getInstance().getBrowser();
 
         IWebDriverFactory factory;
 
