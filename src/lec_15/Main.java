@@ -7,16 +7,15 @@ public class Main {
     public static void main(String[] args) {
         ILoadUsers allUsers = new LoadFromCsv();
 
-        User user1 = null;
+        User userById = null;
         try {
-            user1 = allUsers.findById(4);
+            userById = allUsers.findById(4);
         } catch (UserNotFoundException e) {
             e.printStackTrace();
         }
 
         try {
-            List<User> users = allUsers.findByAge(5);
-            System.out.println(users);
+            List<User> usersByAge = allUsers.findByAge(5);
         } catch (UserNotFoundException e) {
             e.printStackTrace();
         }
@@ -24,10 +23,9 @@ public class Main {
 
         Url url = new Url.Builder().withProtocol("http").withHost("ithillel.com").withPath("search").build();
 
-
         IWebDriver driver = new WebDriverFactory().create();
         driver.open(url.toString());
         driver.click();
-        driver.sendKey(user1.getEmail());
+        driver.sendKey(userById.getEmail());
     }
 }

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class LoadFromCsv  implements ILoadUsers{
+public class LoadFromCsv implements ILoadUsers {
     public LoadFromCsv() {
         loadAll();
     }
