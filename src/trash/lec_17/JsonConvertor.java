@@ -6,8 +6,6 @@ import java.util.Map;
 
 public class JsonConvertor {
     public String convertToJson(Map<String, String> map){
-
-
         List<String> pairs = new ArrayList<>();
         for (String key: map.keySet()){
             String jsonKey = "\"" + key + "\"" + ":";
