@@ -1,21 +1,12 @@
 package lec_16.WebDrivers;
 
 import lec_16.Enums.Browsers;
-import lec_16.IWebDriver;
+import lec_16.Logger.FileLogger;
+import lec_16.WebDriver;
 
-public class FirefoxWebDriver implements IWebDriver {
+public class FirefoxWebDriver extends WebDriver {
     @Override
     public void open(String url) {
-        System.out.println("Open " + Browsers.FIREFOX + " url: " + url);
-    }
-
-    @Override
-    public void click() {
-        System.out.println("Click");
-    }
-
-    @Override
-    public void sendKey(String key) {
-        System.out.println("Send " + key);
+        FileLogger.addToLogList("Open " + Browsers.FIREFOX + " url: " + url);
     }
 }

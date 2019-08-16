@@ -1,5 +1,6 @@
 package lec_16;
 
+import lec_16.Logger.FileLogger;
 import lec_16.Logger.ILogger;
 
 import java.io.File;
@@ -34,7 +35,7 @@ public class LoadFromCsv extends LoadUsers {
             User user = new User(id, email, name, age);
             userList.add(user);
          }
-
+        FileLogger.addToLogList("Load users from csv");
         return userList;
     }
 

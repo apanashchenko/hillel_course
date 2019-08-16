@@ -1,5 +1,6 @@
 package lec_16;
 
+import lec_16.Logger.FileLogger;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.*;
 
@@ -52,6 +53,7 @@ public class LoadFromExcel extends LoadUsers {
             User user = new User(id, email, name, age);
             userList.add(user);
         }
+        FileLogger.addToLogList("Load users from excel");
         return userList;
     }
 }

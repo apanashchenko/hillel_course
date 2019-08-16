@@ -2,14 +2,14 @@ package lec_16.Factories;
 
 import lec_16.Configuration;
 import lec_16.Enums.Browsers;
-import lec_16.IWebDriver;
+import lec_16.WebDriver;
 import lec_16.WebDrivers.ChromeWebDriver;
 import lec_16.WebDrivers.FirefoxWebDriver;
 import lec_16.WebDrivers.SafariWebDriver;
 
 public class WebDriverFactory {
-    public IWebDriver create(){
-        IWebDriver driver = null;
+    public WebDriver create(){
+        WebDriver driver = null;
 
         Browsers browser = Browsers.valueOf(Configuration.getInstance().getBrowser().toUpperCase());
 
