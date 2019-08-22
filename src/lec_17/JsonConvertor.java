@@ -31,10 +31,10 @@ public class JsonConvertor {
         List<String> usersJsonList = new ArrayList<>();
 
         for(User user: users){
-            JsonConvertor jsonConvertor = new JsonConvertor();
-            jsonPart = jsonConvertor.convertToJsonSingleUser(user);
+            jsonPart = convertToJsonSingleUser(user);
             usersJsonList.add(jsonPart);
         }
+
         String json = "[" + String.join(",", usersJsonList) + "]";
         return json;
     }
