@@ -35,7 +35,7 @@ public class JsonConvertor {
             jsonPart = jsonConvertor.convertToJsonSingleUser(user);
             usersJsonList.add(jsonPart);
         }
-        String json = "{" + String.join(",", usersJsonList) + "}";
+        String json = "[" + String.join(",", usersJsonList) + "]";
         return json;
     }
 }
